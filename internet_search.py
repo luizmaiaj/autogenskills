@@ -1,7 +1,12 @@
 from langchain_community.tools import DuckDuckGoSearchResults
 import re                                                                          
 
-def ddg_search(query):
+"""
+This Python script uses the DuckDuckGo Search tool from the langchain_community.tools package to perform an internet search.
+The search results are parsed using a regular expression and displayed in a structured format.
+"""
+
+def internet_search(query):
     search_tool = DuckDuckGoSearchResults()
     results = search_tool.run(tool_input={'query': query})
 
